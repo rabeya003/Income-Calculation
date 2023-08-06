@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="mx-auto w-3/4">
+        <div class="text-5xl text-center font-bold text-sky-600">
+          <h1>Money Master</h1>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="mt-4 w-full">
+            <img src="money-master.png" alt="" />
+          </div>
+          <!-- calculation part -->
+          <div class="bg-gray-100 mt-6 text-center w-full">
+            <h1 class="text-lg text-center font-bold m-4">Income</h1>
+            <!-- income -->
+            <div>
+              <label for="">Income:</label>
+              <input id="income" type="text" class="bg-gray-200" />
+            </div>
+            <!-- expense -->
+            <h1 class="text-lg text-center font-bold m-4">Expenses</h1>
+            <div>
+              <!-- food -->
+              <div>
+                <label for="">Food:</label>
+                <input id="food" type="text" name="" class="bg-gray-200" />
+              </div>
+              <!-- Rent -->
+              <div class="mt-3">
+                <label for="">Rent:</label>
+                <input id="rent" type="text" name="" class="bg-gray-200 pr-3" />
+              </div>
+              <!-- Clothes -->
+              <div class="mt-3">
+                <label for="">Clothes:</label>
+                <input
+                  id="Clothe"
+                  type="text"
+                  name=""
+                  class="bg-gray-200 pr-4"
+                />
+              </div>
+            </div>
+            <!-- btn -->
+            <button
+              id="btn-calculator"
+              class="mt-4 px-12 rounded-lg py-3 ml-12 font-semibold bg-blue-400 text-white"
+            >
+              Calculator
+            </button>
+            <!-- total Expenses -->
+            <div class="m-4 px-16 my-6">
+              <h3 class="text-lg mt-4 font-bold">
+                Total Expenses:<span id="total-expenses"></span>
+              </h3>
+              <h3 class="text-lg mt-4 font-bold pl-4">
+                Balance:<span id="balance"></span>
+              </h3>
+            </div>
+            <!-- savings -->
+            <div>
+              <label for="">save:</label>
+              <input id="save" class="bg-gray-300 w-20 text-2xl" type="text" />
+              <h3 class="inline m-2 font-bold text-lg">%</h3>
+              <button
+                id="save-btn"
+                class="bg-blue-400 px-8 py-2 rounded-lg text-white"
+              >
+                save
+              </button>
+            </div>
+            <!-- final Remaining -->
+            <div>
+              <h3 class="text-lg mt-4 font-bold">
+                Saving Amount:<span id="saving"></span>
+              </h3>
+              <h3 class="text-lg mt-4 font-bold">
+                Remaining Balance:<span id="remaining"></span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- js -->
+    <script src="js/calculation.js"></script>
+  </body>
+</html>
